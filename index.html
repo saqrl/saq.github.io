@@ -1,6 +1,6 @@
 <html>
     <head>
-        <style> 
+        <style>
             body {
                 padding: 5em;
                 max-width: 1200px;
@@ -8,18 +8,19 @@
                 text-align: left;
                 font-family: 'Verdana',Roboto,arial,sans-serif;
             }
-            div { 
-                margin-left: 30px; 
-                margin-right: 30px; 
-                margin-top: 30px; 
-                margin-bottom: 30px; 
+            div {
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-top: 30px;
+                margin-bottom: 30px;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-            } 
+            }
             p {
                 font-weight: 100;
                 font-size: 1.1em;
+                text-align: left;
             }
             h1 {
                 display: block;
@@ -68,7 +69,7 @@
                 height: 100%;
                 object-fit: cover;
             }
-        </style> 
+        </style>
         <title>SAQ: Action-Quantized Offline Reinforcement Learning for Robotic Skill Learning
         </title>
     </head>
@@ -79,8 +80,62 @@
             <br>
         </center>
 
+        <center>
+            <h2>Abstract
+            </h2>
+        </center>
 
-           
+        <center>
+            <p>The offline reinforcement learning (RL) paradigm provides a general
+recipe to convert static behavior datasets of experience into policies that can
+perform better than the behavior policy that collected the data. While policy
+constraints, conservatism, and other methods for mitigating distributional shifts
+w.r.t. behavior datasets have made offline reinforcement learning more effective,
+the continuous action setting often necessitates various approximations for applying
+these techniques. Many of these challenges are greatly alleviated in discrete action
+settings, where offline RL constraints and regularizers can often be computed more
+precisely or even exactly. In this paper, we propose an adaptive scheme for action
+quantization. We use a VQ-VAE to learn state-conditioned action quantization,
+avoiding the exponential blowup that comes with naïve discretization of the action
+space. We show that several state-of-the-art offline RL methods such as IQL,
+CQL, and BRAC improve in performance on benchmarks when combined with
+our proposed discretization scheme. We further validate our approach on a set of
+challenging long-horizon complex robotic manipulation tasks in the robomimic
+environment where our discretized offline RL algorithms are able to improve upon
+their continuous counterparts by 2-3x in performance. Our project page is at
+saqrl.github.io.
+            </p>
+            <br>
+        </center>
+
+        <center>
+            <h2>Method
+            </h2>
+        </center>
+
+        <div wdith="50%">
+        <img src="saq_train.gif">
+        <img src="saq_inference.gif">
+      </div>
+        <center>
+            <h2>D4RL
+            </h2>
+        </center>
+
+        <div width="50%">
+        <img src="d4rl.png">
+        </div>
+
+        <center>
+            <h2>Robomimic
+            </h2>
+        </center>
+
+        <div width="20%">
+        <img src="robomimic.png">
+        </div>
+
+
 
     </body>
 </html>
