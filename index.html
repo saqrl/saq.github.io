@@ -69,6 +69,56 @@
                 height: 100%;
                 object-fit: cover;
             }
+            .author-block {
+                display: inline-block;
+            }
+
+          .publication-authors {
+              font-family: 'Google Sans', sans-serif;
+          }
+          .publication-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3em;
+            margin-top: 1em
+            /* width: 50%; */
+            /* gap: 10px; */
+          }
+          .link-block {
+            height: 40px;
+            width: 40px;
+            margin: 20px;
+            /* flex-basis: 100%; */
+            /* width: 0; */
+
+
+          }
+          .authors {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* width: 50%; */
+            /* gap: 10px; */
+            margin: 1.5em;
+            margin-bottom: 0.5em;
+            font-size: 20;
+          }
+          .author-block {
+            height: 10px;
+            width: 150px;
+            margin: 0px;
+          }
+          img { width: 100%; height: auto; }
+          a{
+            color: #3273dc;
+    cursor: pointer;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+
+          }
         </style>
         <title>SAQ: Action-Quantized Offline Reinforcement Learning for Robotic Skill Learning
         </title>
@@ -77,8 +127,48 @@
         <center>
             <h1>SAQ: Action-Quantized Offline Reinforcement Learning for Robotic Skill Learning
             </h1>
-            <br>
         </center>
+
+        <div class="authors">
+          <div class="author-block">
+              <a style="text-decoration:none" href="https://cs.berkeley.edu/~shah">Jianlan Luo</a>,</div>
+          <div class="author-block">
+              <a style="text-decoration:none" href="">Perry Dong</a>,</div>
+          <div class="author-block">
+              <a style="text-decoration:none" href="https://dashora7.github.io">Jeffrey Wu</a>,
+          </div>
+          <div class="author-block">
+              <a style="text-decoration:none" href="">Aviral Kumar</a>,
+          </div>
+          <div class="author-block">
+              <a style="text-decoration:none" href="https://kylesta.ch">Young Geng</a>,
+          </div>
+          <div class="author-block">
+              <a style="text-decoration:none" href="https://cs.berkeley.edu/~svlevine">Sergey Levine</a>
+          </div>
+      </div>
+
+
+          <div class="publication-links">
+
+              <!-- Code Link. -->
+              <div class="link-block">
+                  <a href="https://github.com/jianlanluo/SAQ">
+                      <img src="github.png" ></img>
+                      <center><span>Code</span></center>
+                  </a>
+              </div>
+
+
+              <!-- BibTex -->
+              <span class="link-block">
+                  <a href="https://openreview.net/pdf?id=n9lew97SAn">
+                      <img src="paper.png"></img>
+                      <center><span>Paper</span></center>
+                  </a>
+              </span>
+
+          </div>
 
         <center>
             <h2>Abstract
@@ -117,23 +207,6 @@ saqrl.github.io.
         <img src="saq_train.gif">
         <img src="saq_inference.gif">
       </div>
-        <center>
-            <h2>D4RL
-            </h2>
-        </center>
-
-        <div width="50%">
-        <img src="d4rl.png">
-        </div>
-
-        <center>
-            <h2>Robomimic
-            </h2>
-        </center>
-
-        <div width="20%">
-        <img src="robomimic.png">
-        </div>
 
 
 
