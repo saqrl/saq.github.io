@@ -13,6 +13,14 @@
                 font-size: 1.1em;
                 text-align: left;
             }
+            ul {
+              font-weight: 100;
+              font-size: 1.1em;
+              text-align: left;
+            }
+            li {
+              margin-bottom:  2px;
+            }
             h1 {
                 display: block;
                 font-size: 2em;
@@ -157,7 +165,7 @@
           <div class="second">
               <a style="text-decoration:none" href="https://pd-perry.github.io">Perry Dong</a></div>
           <div class="third">
-              <a style="text-decoration:none" href="">Jeffrey Wu</a>
+              <a style="text-decoration:none" href="https://jeffreywu13579.github.io">Jeffrey Wu</a>
           </div>
           <div class="fourth">
               <a style="text-decoration:none" href="https://aviralkumar2907.github.io/">Aviral Kumar</a>
@@ -214,18 +222,48 @@ CQL, and BRAC improve in performance on benchmarks when combined with
 our proposed discretization scheme. We further validate our approach on a set of
 challenging long-horizon complex robotic manipulation tasks in the robomimic
 environment where our discretized offline RL algorithms are able to improve upon
-their continuous counterparts by 2-3x in performance. 
+their continuous counterparts by 2-3x in performance.
             </p>
             <br>
         </center>
 
         <center>
-            <h2>Method
+            <h2>Summary
             </h2>
         </center>
 
+        <ul>
+          <li>Train a conditional VQ-VAE to learn a latent representation of the actions conditioned on the state</li>
+          <li>Perform offline RL with the VQ-VAE discrete codes as actions</li>
+          <li>During inference, select the best discrete action using the policy and transform into continuous with the trained decoder</li>
+        </ul>
+
+        <div wdith="50%">
+        <img src="saq_static.jpeg">
+      </div>
+
+      <br>
+
+      <center>
+          <h2>Method
+          </h2>
+      </center>
+
+
         <div wdith="50%">
         <img src="oct22_final_animation.gif">
+      </div>
+
+      <br>
+
+      <center>
+          <h2>Results
+          </h2>
+      </center>
+
+
+        <div wdith="40%">
+        <img src="saq_results.jpeg">
       </div>
 
 
